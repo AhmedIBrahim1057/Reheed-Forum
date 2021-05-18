@@ -1,0 +1,277 @@
+/* Add here all your CSS customizations */
+
+/* Home ---------------------*/
+
+.logo- {
+    width: auto;
+    max-height: 77px;
+    height: auto;
+    margin: 0 !important;
+}
+
+/* Menu item arrow ****/
+#header.header-narrow .header-nav.header-nav-stripe nav>ul>li.dropdown>a.dropdown-toggle::after,
+#header.header-narrow .header-nav.header-nav-stripe nav>ul>li.dropdown:hover>a.dropdown-toggle::after,
+#header.header-narrow .header-nav.header-nav-dark-dropdown nav>ul>li.dropdown>a.dropdown-toggle::after,
+#header.header-narrow .header-nav.header-nav-dark-dropdown nav>ul>li.dropdown:hover>a.dropdown-toggle::after{
+    top: 43px;
+}
+#header .header-nav.header-nav-stripe nav > ul > li:hover > a{
+    background-color: #f8992c;
+}
+
+#header .header-nav-main nav > ul > li > a:focus, #header .header-nav-main nav > ul > li > a:hover{
+    color:#fff;
+}
+
+/* main class div [ALL pages + home] ****/
+.main{
+     /* window height - (footer height)  */
+    min-height: calc(100vh - 69px);
+}
+
+/* Project Objective ****/
+.project_obj ul{
+    /* list-style-type: square; */
+    list-style-type: none;
+}
+
+.project_obj ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f8992c; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 13px; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 17px;
+  }
+
+.project_obj.section-custom-construction .container::after{
+    background: #f8992c !important;
+}
+.project_obj.section-custom-construction .container::before{
+    background: #78d2f7 !important;
+}
+
+/* Parteners ****/
+.our-clients .sliderImgDiv{
+    /* box-shadow: 1px 10px 19px -15px rgba(0, 0, 0, 0.33) !important; */
+    box-shadow: 0px 0px 19px -12px rgba(0, 0, 0, 0.33) !important;
+    margin: 3px auto;
+    position: relative;
+    width: 100%;
+    height: 145px;
+    /* background: #242e39; */
+    /* border: 1px solid #e2e2e2; */
+}
+
+.our-clients .sliderImgDiv img{
+    max-height: 65%;
+    max-width: 100%;
+    width: auto !important;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.our-clients {
+    padding: 29px 0 60px;
+}
+
+.our-clients.section-custom-construction-2::after{
+    background: #f8992c !important;
+}
+
+
+/* Stay Connected *****/
+.stay_connected {
+    margin: 0 !important;;
+}
+.stay_connected .social-icons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.stay_connected .social-icons a{
+    /* background:#f8992c; */
+    background:#78d2f7;
+    color: white!important;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.stay_connected .iframeFB{
+    /* border:none; */
+    border:1px solid #ffe6d0;
+    overflow:hidden;
+    width:500px; 
+    height:430px; 
+    background: white;
+    margin:35px auto 35px;
+    display:block;  
+}
+
+
+.stay_connected.section-custom-construction .container::after{
+    display:none;  
+}
+.stay_connected.section-custom-construction .container::before{
+    display:none;  
+}
+/* ._2p3a{
+    width:100% !important; 
+} */
+
+@media only screen and (max-width: 570px) {
+    .stay_connected .iframeFB{
+        width:80%; 
+        height:350px; 
+    }
+
+    .container {
+        padding: 0px 30px;
+    }
+  }
+
+/* Footer **********/
+#footer{
+    padding: 0 !important;
+    background: #f8992c;
+    min-height: 60px;
+}
+
+#footer .footer-copyright{
+    margin: 0;
+    border-top:none;
+}
+
+#footer::after{
+    display: none;
+}
+
+#footer .footer-copyright p{
+    color: #f2f2f2;
+    /* color: #000; */
+    /* font-weight: bold; */
+}
+
+/* END Home *********************/
+
+/* Events *********************/
+.EventsReedMore{
+    margin-top: 5px !important;
+    display: block;
+}
+/* END Events *********************/
+
+/* Events Details *********************/
+
+/* Parteners ****/
+.additional_imgs .sliderImgDiv{
+    /* box-shadow: 1px 10px 19px -15px rgba(0, 0, 0, 0.33) !important; */
+    box-shadow: 0px 0px 19px -12px rgba(0, 0, 0, 0.33) !important;
+    margin: 3px auto;
+    position: relative;
+    width: 100%;
+    height: 145px;
+    /* background: #242e39; */
+    /* border: 1px solid #e2e2e2; */
+}
+
+.additional_imgs .sliderImgDiv img{
+    max-height: 65%;
+    max-width: 100%;
+    width: auto !important;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* END Events Details *********************/
+
+/* Contact Us *********************/
+.contactBtn{
+    background-color: #f8992c !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contactBtn:hover{
+    background-color:#eaeff3 !important;
+    color:#444 !important;
+}
+/* END Contact Us *********************/
+
+
+#footer {
+    background: #E9EFF2 url(../../img/demos/construction/footer-construction.jpg) no-repeat 50% 50%;
+    border-top: 0;
+    padding: 20px 0 30px;
+    min-height: 0px;
+    overflow: hidden;
+}
+#footer .footer-copyright {
+    background: transparent;
+    margin: -10px 0 0;
+    padding: 20px 0 0;
+    border-top: 0px solid #FFF;
+}
+#footer .container .row > div {
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+.header-logo a {
+    text-decoration: none;
+}
+
+
+
+.caption {
+    border-bottom: #f8992c 3px solid;
+    width: fit-content;
+}
+
+.caption p {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.section .container-login100-form-btn{
+    width: 210px;
+    padding-top: 60px;
+    float: right;
+}
+
+.section .login100-form-btn {
+    font-size: smaller !important;
+    text-transform: capitalize;
+}
+
+.section .login100-form-bgbtn {
+    background: -webkit-linear-gradient(right, #d601e9, #f8992c, #d601e9, #f8992c);
+    background: -o-linear-gradient(right, #d601e9, #f8992c, #d601e9, #f8992c);
+    background: -moz-linear-gradient(right, #d601e9, #f8992c, #d601e9, #f8992c);
+    background: linear-gradient(right, #d601e9, #f8992c, #d601e9, #f8992c);
+}
+
+
+.add-topic .wrap-login100 {
+    width: 100%;
+}
+
+@media (max-width: 790px) {
+    .section .container-login100-form-btn{
+        width: 210px;
+        padding-top: 0px;
+        float: right;
+    }
+}
