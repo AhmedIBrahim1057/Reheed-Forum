@@ -137,6 +137,45 @@
 					</div>
 				</section>
 
+
+                <!-- Modal content-->
+                <div class="modal-content modal-lg">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="limiter">
+                            <div class="container-login100">
+                                <div class="wrap-login100 p-l-55 p-r-55 p-t-20 p-b-20" style="width: 100%;">
+                                    <form class="login100-form validate-form">
+                                        <span class="login100-form-title p-b-49">
+                                            Topic title
+                                        </span>
+                    
+                                        <div class="wrap-input100 validate-input m-b-23">
+                                            <span class="label-input100">Message</span>
+                                            <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                                        </div>
+                                        
+                                        <div class="container-login100-form-btn">
+                                            <div class="wrap-login100-form-btn">
+                                                <div class="login100-form-bgbtn"></div>
+                                                <button class="login100-form-btn">
+                                                    Reply
+                                                </button>
+                                            </div>
+                                        </div>
+        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+                    </div>
+                </div>
+
 				<div class="container">
 
 					<div class="row mb-xl">
@@ -153,7 +192,7 @@
 											<span class="comment-by">
 												<strong>John Doe</strong>
 												<span class="pull-right">
-													<span> <a href="#"><i class="fa fa-reply"></i> Reply</a></span>
+													<span> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-reply"></i> Reply</a></span>
 												</span>
 											</span>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
@@ -171,9 +210,6 @@
 													<div class="comment-arrow"></div>
 													<span class="comment-by">
 														<strong>John Doe</strong>
-														<!-- <span class="pull-right">
-															<span> <a href="#"><i class="fa fa-reply"></i> Reply</a></span>
-														</span> -->
 													</span>
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
 													<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
@@ -189,9 +225,6 @@
 													<div class="comment-arrow"></div>
 													<span class="comment-by">
 														<strong>John Doe</strong>
-														<!-- <span class="pull-right">
-															<span> <a href="#"><i class="fa fa-reply"></i> Reply</a></span>
-														</span> -->
 													</span>
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
 													<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
