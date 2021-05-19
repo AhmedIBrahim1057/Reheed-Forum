@@ -315,6 +315,50 @@
     color: #337ab7;
 }
 
+.home-recent {
+    padding-top: 130px;
+    padding-right: 50px;
+}
+
+.home-recent .recent-wrapper h5::after {
+    content: "";
+    background: #5561e2;
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    left: 35px;
+    top: 180px;
+}
+
+.intro {
+    box-shadow: unset !important;
+}
+
+.topic-title {
+    cursor: pointer;
+    color: rgb(88, 88, 88);
+}
+
+html section.section-tertiary {
+    background: url('../img/banner5.png') no-repeat center;
+    background-size: cover;
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.952); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+
 @media (max-width: 992px) {
     .section .container-login100-form-btn{
         width: 210px;
@@ -328,6 +372,22 @@
 
     .recent-col {
         margin-top: 30px;
+    }
+
+    .home-recent {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .home-recent .recent-wrapper h5::after {
+        content: "";
+        background: #5561e2;
+        height: 2px;
+        width: 40px;
+        position: absolute;
+        left: 40px;
+        top: 60px;
     }
 }
 
