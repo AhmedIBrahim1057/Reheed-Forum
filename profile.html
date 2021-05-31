@@ -128,11 +128,12 @@
 			</header>
 
 			<div role="main" class="main">
+
 				<section class="section section-tertiary section-no-border pb-md mt-none">
 					<div class="container">
 						<div class="row mt-xl">
 							<div class="col-md-4 col-md-offset-1 pt-xlg mt-xlg align-left">
-								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Topics</h1>
+								<h1 class="text-uppercase font-weight-light mt-xl text-color-primary">Profile	</h1>
 							</div>
 							<div class="col-md-7 mt-xlg align-right">
 								<div class="container-login100-form-btn" onclick="location.href='add-topic.html';">
@@ -148,239 +149,82 @@
 					</div>
 				</section>
 
-                <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                
-                    <!-- Modal content-->
-                    <div class="modal-content modal-lg">
-                        <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="limiter">
-                                <div class="container-login100">
-                                    <div class="wrap-login100 p-l-55 p-r-55 p-t-20 p-b-20" style="width: 100%;">
-                                        <form class="login100-form validate-form">
-                                            <span class="login100-form-title p-b-49">
-                                                Topic title
-                                            </span>
-                        
-                                            <div class="wrap-input100 validate-input m-b-23">
-                                                <span class="label-input100">Message</span>
-                                                <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
-                                            </div>
-                                            
-                                            <div class="container-login100-form-btn">
-                                                <div class="wrap-login100-form-btn">
-                                                    <div class="login100-form-bgbtn"></div>
-                                                    <button class="login100-form-btn">
-                                                        Reply
-                                                    </button>
-                                                </div>
-                                            </div>
-            
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
-                        </div>
-                    </div>
-                
-                    </div>
-                </div>
+				<div class="container py-2">
 
-				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-3 mt-4 mt-lg-0">
 
-					<div class="row mb-xl">
-						
-						<div class="col-md-8">
-							<div class="row">
-								<div class="col-md-12 p-b-30">
-									<div class="wrap-input100 validate-input m-b-23" data-validate = "email is reauired">
-										<input class="input100" type="email" name="email" placeholder="searche">
-										<span class="focus-input100 search-icon"><i class="fa fa-search"></i></span>
+							<div class="d-flex justify-content-center mb-4">
+								<div class="profile-image-outer-container">
+									<div class="profile-image-inner-container bg-color-primary">
+										<img src="img/avatars/avatar.jpg">
+										<span class="profile-image-button bg-color-dark">
+											<i class="fas fa-camera text-light"></i>
+										</span>
 									</div>
+									<input type="file" id="file" class="profile-image-input">
 								</div>
 							</div>
-							<ul class="comments">
-								<li>
-									<div class="comment">
-										<div class="img-thumbnail">
-											<img class="avatar" alt="" src="img/person.png">
-										</div>
-										<div class="votes text-center">
-											<i class="fa fa-caret-up"></i>
-												<p class="deg">10</p>
-											<i class="fa fa-caret-down"></i>
-											<p class="v-title">votes</p>
-										</div>
-										<div class="comment-block">
-											<div class="comment-arrow"></div>
-											<span class="comment-by">
-                                                <h4 class="topic-title" onclick="location.href='topic.html';"><strong>Topic Title </strong></h4>
-												<strong>John Doe</strong>
-												<span class="pull-right reply">
-													<span> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-reply"></i> Reply</a></span>
-												</span>
-											</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
-											<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
-										</div>
-									</div>
 
-									<ul class="comments reply">
-										<li>
-											<div class="comment">
-												<div class="img-thumbnail">
-													<img class="avatar" alt="" src="img/person.png">
-												</div>
-												<div class="votes text-center">
-													<i class="fa fa-caret-up"></i>
-														<p class="deg">50</p>
-													<i class="fa fa-caret-down"></i>
-													<p class="v-title">votes</p>
-												</div>
-												<div class="comment-block">
-													<div class="comment-arrow"></div>
-													<span class="comment-by">
-														<strong>John Doe</strong>
-													</span>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
-													<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="comment">
-												<div class="img-thumbnail">
-													<img class="avatar" alt="" src="img/person.png">
-												</div>
-												<div class="comment-block">
-													<div class="comment-arrow"></div>
-													<span class="comment-by">
-														<strong>John Doe</strong>
-													</span>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae.</p>
-													<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<div class="comment">
-										<div class="img-thumbnail">
-											<img class="avatar" alt="" src="img/person.png">
-										</div>
-										<div class="comment-block">
-											<div class="comment-arrow"></div>
-											<span class="comment-by">
-                                                <h4 class="topic-title" onclick="location.href='topic.html';"><strong>Topic Title</strong></h4>
-												<strong>John Doe</strong>
-												<span class="pull-right reply">
-													<span> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-reply"></i> Reply</a></span>
-												</span>
-											</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="comment">
-										<div class="img-thumbnail">
-											<img class="avatar" alt="" src="img/person.png">
-										</div>
-										<div class="comment-block">
-											<div class="comment-arrow"></div>
-											<span class="comment-by">
-                                                <h4 class="topic-title" onclick="location.href='topic.html';"><strong>Topic Title</strong></h4>
-												<strong>John Doe</strong>
-												<span class="pull-right reply">
-													<span> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-reply"></i> Reply</a></span>
-												</span>
-											</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="comment">
-										<div class="img-thumbnail">
-											<img class="avatar" alt="" src="img/person.png">
-										</div>
-										<div class="comment-block">
-											<div class="comment-arrow"></div>
-											<span class="comment-by">
-                                                <h4 class="topic-title" onclick="location.href='topic.html';"><strong>Topic Title</strong></h4>
-												<strong>John Doe</strong>
-												<span class="pull-right reply">
-													<span> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-reply"></i> Reply</a></span>
-												</span>
-											</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="comment">
-										<div class="img-thumbnail">
-											<img class="avatar" alt="" src="img/person.png">
-										</div>
-										<div class="comment-block">
-											<div class="comment-arrow"></div>
-											<span class="comment-by">
-                                                <h4 class="topic-title" onclick="location.href='topic.html';"><strong>Topic Title</strong></h4>
-												<strong>John Doe</strong>
-												<span class="pull-right reply">
-													<span> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-reply"></i> Reply</a></span>
-												</span>
-											</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<span class="date pull-right">May 18, 2021 at 1:38 pm</span>
-										</div>
-									</div>
-								</li>
-							</ul>
+							<aside class="sidebar mt-2" id="sidebar">
+								<ul class="nav nav-list flex-column mb-5">
+									<li class="nav-item"><a class="nav-link text-dark active" href="#">My Profile</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">User Preferences</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Billing</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Invoices</a></li>
+								</ul>
+							</aside>
+
 						</div>
-						<div class="col-md-4 recent-col">
-							<div class="recent-wrapper">
-								<h5>Hot Topics</h5>
-								<div class="recent-topics">
-									<ul class="p-t-10">
-										<li class="p-b-10">
-											<span class="m-r-10"><i class="fa fa-comments"></i></span>
-											<a href="topic.html">First topic</a>
-										</li>
-										<li class="p-b-10">
-											<span class="m-r-10"><i class="fa fa-comments"></i></span>
-											<a href="topic.html">Second topic</a>
-										</li>
-										<li class="p-b-10">
-											<span class="m-r-10"><i class="fa fa-comments"></i></span>
-											<a href="topic.html">Third topic</a>
-										</li>
-										<li class="p-b-10">
-											<span class="m-r-10"><i class="fa fa-comments"></i></span>
-											<a href="topic.html">Fourth topic</a>
-										</li>
-                                        <li class="p-b-10">
-											<span class="m-r-10"><i class="fa fa-comments"></i></span>
-											<a href="topic.html">Fifth topic</a>
-										</li>
-									</ul>
-								</div>
+						<div class="col-lg-9">
+
+							<div class="overflow-hidden mb-1">
+								<h2 class="font-weight-normal text-7 mb-0"><strong class="font-weight-extra-bold">My</strong> Profile</h2>
 							</div>
+							
+
+							<form role="form" class="needs-validation">
+							    <div class="form-group row">
+							        <label class="col-lg-3 font-weight-bold text-dark col-form-label form-control-label text-2 required">name</label>
+							        <div class="col-lg-9">
+							            <input class="form-control" required type="text" value="John">
+							        </div>
+							    </div>
+							    <div class="form-group row">
+							        <label class="col-lg-3 font-weight-bold text-dark col-form-label form-control-label text-2 required">Email</label>
+							        <div class="col-lg-9">
+							            <input class="form-control" required type="email" value="email@gmail.com">
+							        </div>
+							    </div>
+							    
+							    
+							    <div class="form-group row">
+							        <label class="col-lg-3 font-weight-bold text-dark col-form-label form-control-label text-2 required">Password</label>
+							        <div class="col-lg-9">
+							            <input class="form-control" required type="password" value="">
+							        </div>
+							    </div>
+							    <div class="form-group row">
+							        <label class="col-lg-3 font-weight-bold text-dark col-form-label form-control-label text-2 required">Confirm password</label>
+							        <div class="col-lg-9">
+							            <input class="form-control" required type="password" value="">
+							        </div>
+							    </div>
+							    <div class="form-group row">
+									<div class="form-group col-lg-9">
+										
+									</div>
+									<div class="form-group col-lg-3">
+										<input type="submit" value="Save" class="btn btn-primary btn-modern float-right" data-loading-text="Loading...">
+									</div>
+							    </div>
+							</form>
+
 						</div>
 					</div>
 
 				</div>
+
 			</div>
 
 			<footer id="footer">
@@ -396,7 +240,6 @@
 
 				</div>
 			</footer>
-
 		</div>
 
 		<!-- Vendor -->

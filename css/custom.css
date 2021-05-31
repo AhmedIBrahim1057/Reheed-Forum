@@ -359,6 +359,22 @@ html section.section-tertiary {
 }
 
 
+.votes {
+    margin-left: -150px;
+    position: absolute;
+    margin-top: 0px !important;
+    font-size: 35px;
+}
+
+.votes i {
+    cursor: pointer;
+}
+
+.v-title {
+    margin-top: 0px;
+    font-size: 11px;
+}
+
 @media (max-width: 992px) {
     .section .container-login100-form-btn{
         width: 210px;
@@ -394,5 +410,35 @@ html section.section-tertiary {
 @media (min-width: 992px) {
     .modal-lg {
         margin-left: -150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .votes {
+        margin-right: 60px;
+        position: relative;
+        margin-top: -40px !important;
+        float: right;
+        font-size: 35px;
+        z-index: 9;
+        transform: rotate(90deg);
+    }
+
+    /* .comment-block {
+        margin-top: -95px;
+    } */
+
+    .deg {
+        transform: rotate(-90deg);
+    }
+    
+    .votes i {
+        cursor: pointer;
+    }
+    
+    .v-title {
+        margin-top: 10px;
+        font-size: 11px;
+        transform: rotate(-90deg);
     }
 }
